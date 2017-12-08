@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="layout" template="/WEB-INF/pages/layout/base-layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="header" value="/WEB-INF/pages/layout/header.jsp"/>
+		<put-attribute name="menu" value="/WEB-INF/pages/layout/menu.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/pages/layout/footer.jsp"/>
+	</definition>
+	
+	<!-- Login page -->
+	<definition name="home" extends="layout">
+		<put-attribute name="title" value="Login"/>
+		<put-attribute name="body" value="/WEB-INF/pages/home.jsp"/>
+	</definition>
+	
+	<!-- Employee page -->
+	<definition name="list-employee" extends="layout">
+		<put-attribute name="title" value="Employees"/>
+		<put-attribute name="body" value="/WEB-INF/pages/list-employee.jsp"/>
+	</definition>
+	
+	<!-- Login page -->
+	<definition name="login" extends="layout">
+		<put-attribute name="title" value="Login"/>
+		<put-attribute name="body" value="/WEB-INF/pages/login.jsp"/>
+	</definition>
+	
+	<definition name="category-form" extends="layout">
+		<put-attribute name="title" value="Category Form"/>
+		<put-attribute name="body" value="/WEB-INF/pages/category-form.jsp"/>
+	</definition>
+	
+	<definition name="product-form" extends="layout">
+		<put-attribute name="title" value="Category Form"/>
+		<put-attribute name="body" value="/WEB-INF/pages/product-form.jsp"/>
+	</definition>
+	
+	<!-- Products page -->
+	<definition name="list-product" extends="layout">
+		<put-attribute name="title" value="Products"/>
+		<put-attribute name="body" value="/WEB-INF/pages/list-product.jsp"/>
+	</definition>
+	
+	<!-- Products detail page -->
+	<definition name="product-detail" extends="layout">
+		<put-attribute name="title" value="Product Detail"/>
+		<put-attribute name="body" value="/WEB-INF/pages/product-detail.jsp"/>
+	</definition>
+	
+	<definition name="register" extends="layout">
+		<put-attribute name="title" value="Register"/>
+		<put-attribute name="body" value="/WEB-INF/pages/register.jsp"/>
+	</definition>
+	
+	<definition name="cart-detail" extends="layout">
+		<put-attribute name="title" value="Cart"/>
+		<put-attribute name="body" value="/WEB-INF/pages/cart-detail.jsp"/>
+	</definition>
+	
+	<definition name="shipping-form" extends="layout">
+		<put-attribute name="title" value="Shipping Form"/>
+		<put-attribute name="body" value="/WEB-INF/pages/shipping-form.jsp"/>
+	</definition>
+	
+	<definition name="shipping-info" extends="layout">
+		<put-attribute name="title" value="Cart"/>
+		<put-attribute name="body" value="/WEB-INF/pages/shipping-info.jsp"/>
+	</definition>
+	
+	
+	<!-- Admin page -->
+	<definition name="admin-layout" template="/WEB-INF/pages/admin/base-layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="menu" value="/WEB-INF/pages/admin/menu.jsp"/>
+		<put-attribute name="body" value=""/>
+	</definition>
+	<definition name="admin-home" extends="admin-layout">
+		<put-attribute name="title" value="Home"/>
+		<put-attribute name="body" value="/WEB-INF/pages/admin/home.jsp"/>
+	</definition>
+	
+	<definition name="admin-product-list" extends="admin-layout">
+		<put-attribute name="title" value="Home"/>
+		<put-attribute name="body" value="/WEB-INF/pages/admin/products.jsp"/>
+	</definition>
+	
+	<definition name="admin-bike-statictis" extends="admin-layout">
+		<put-attribute name="title" value="Home"/>
+		<put-attribute name="body" value="/WEB-INF/pages/admin/product-statictis.jsp"/>
+	</definition>
+	
+</tiles-definitions> 
