@@ -1,28 +1,31 @@
 package com.example.springboot.service.impl;
 
 import java.io.Serializable;
-import java.util.List;
 
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
-import com.example.springboot.repository.GenericDao;
 import com.example.springboot.service.GenericService;
 
 @Service
 public abstract class GenericServiceImpl<E, K extends Serializable> implements GenericService<E, K>{
 
-	private GenericDao<E, K> genericDao;
+	private CrudRepository<E, K> genericDao;
 	
-	public GenericServiceImpl(GenericDao<E, K> genericDao) {
-		this.genericDao = genericDao;
-	}
 
 	public GenericServiceImpl() {
+	}
+	
+	
+
+	public GenericServiceImpl(CrudRepository<E, K> genericDao) {
+		super();
+		this.genericDao = genericDao;
 	}
 
 	@Override
 	public void saveOrUpdate(E entity) {
-		genericDao.saveOrUpdate(entity);
+		genericDao.save(entity);
 		
 	}
 
@@ -34,12 +37,12 @@ public abstract class GenericServiceImpl<E, K extends Serializable> implements G
 
 	@Override
 	public E find(K key) {
-		return genericDao.find(key);
+		return genericDao.findOne(key);
 	}
 
 	@Override
-	public List<E> getAll() {
-		return genericDao.getAll();
+	public Iterable<E> getAll() {
+		return genericDao.findAll();
 	}
 
 }

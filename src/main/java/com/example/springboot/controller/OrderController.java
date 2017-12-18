@@ -1,38 +1,12 @@
 package com.example.springboot.controller;
 
-import java.util.Map;
-import java.util.Map.Entry;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.example.springboot.service.CustomerService;
-import com.example.springboot.service.OrderService;
-import com.example.springboot.service.ProductService;
-import com.springtutorial.bo.Cart;
-import com.springtutorial.bo.CartItem;
-import com.springtutorial.entity.Customer;
-import com.springtutorial.entity.Order;
-import com.springtutorial.entity.OrderDetail;
-import com.springtutorial.entity.Product;
-import com.springtutorial.util.CartUtil;
 
 @Controller
 @RequestMapping("/checkout")
 public class OrderController {
-	
+	/*
 	@Autowired
 	private ProductService productService;
 	@Autowired
@@ -121,5 +95,6 @@ public class OrderController {
 	public String checkoutSuccessMsg() {
 		return "shipping-info";
 	}
+	*/
 
 }

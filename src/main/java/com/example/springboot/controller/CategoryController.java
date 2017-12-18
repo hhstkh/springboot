@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.springboot.entity.Category;
 import com.example.springboot.service.CategoryService;
-import com.springtutorial.entity.Category;
 
 @Controller
 public class CategoryController {

@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.example.springboot.entity.Product;
 import com.example.springboot.service.ProductService;
-import com.springtutorial.entity.Product;
 
 @Controller
 @RequestMapping("/admin")
@@ -25,7 +25,7 @@ public class AdminController {
 	@RequestMapping("/bikes")
 	public String getAllBikes(ModelMap model) {
 		
-		List<Product> products = productService.getAll();
+		Iterable<Product> products = productService.getAll();
 		model.addAttribute("products", products);
 		return "admin-product-list";
 	}
