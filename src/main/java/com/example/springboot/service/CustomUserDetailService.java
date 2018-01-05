@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import com.example.springboot.entity.User;
 
 @Service("customUserDetailService")
-public class CustomUserDetailService implements UserDetailsService {
+public class CustomUserDetailService /*implements UserDetailsService*/ {
 
-	@Autowired
+	/*@Autowired
 	private UserService userService;
 	
 	@Override
@@ -31,11 +31,11 @@ public class CustomUserDetailService implements UserDetailsService {
 	private List<GrantedAuthority> getGrantedAuthorities(User user) {
 		List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
 		
-		/*for (UserProfile userProfile : user.getUserProfiles()) {
+		for (UserProfile userProfile : user.getUserProfiles()) {
 			authorities.add(new SimpleGrantedAuthority("ROLE_" + userProfile.getType()));
-		}*/
+		}
 		
 		return authorities;
-	}
+	}*/
 
 }

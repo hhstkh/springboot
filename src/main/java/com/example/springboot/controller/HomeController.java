@@ -27,10 +27,10 @@ public class HomeController extends CommonController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String welcome(ModelMap model) {
-		Iterable<Product> products = productService.getAll();
-		model.put("products", products);
+		/*Iterable<Product> products = productService.getAll();
+		model.put("products", products);*/
 		
-		return "home";
+		return "index";
 	}
 	
 	@RequestMapping("/login")

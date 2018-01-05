@@ -6,8 +6,8 @@ import com.example.springboot.service.MasterDataService;
 
 //@ControllerAdvice
 public class CommonController {
-	@Autowired
-	private MasterDataService masterDataService;
+	/*@Autowired
+	private MasterDataService masterDataService;*/
 	
 	/*@ModelAttribute
 	public void getMasterData(ModelMap model, HttpServletRequest request) {
