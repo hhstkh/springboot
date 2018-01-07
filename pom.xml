@@ -42,20 +42,20 @@
 			<scope>runtime</scope>
 		</dependency>
 		<!-- Add freemarker template support -->     
-       <!--  <dependency>
+       <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
-        </dependency> -->
+        </dependency>
         <!-- Add Hikari Connection Pooling support -->
-        <dependency>
+        <!-- <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
-        </dependency>
+        </dependency> -->
         <!-- Add H2 database support [for running with local profile] -->
-        <dependency>
+        <!-- <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-        </dependency>
+        </dependency> -->
         <dependency>
     		<groupId>org.apache.commons</groupId>
     		<artifactId>commons-lang3</artifactId>
