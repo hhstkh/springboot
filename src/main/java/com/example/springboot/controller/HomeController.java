@@ -30,7 +30,7 @@ public class HomeController extends CommonController {
 		/*Iterable<Product> products = productService.getAll();
 		model.put("products", products);*/
 		
-		return "index";
+		return "welcome";
 	}
 	
 	@RequestMapping("/login")
