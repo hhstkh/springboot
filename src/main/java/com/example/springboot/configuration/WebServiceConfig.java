@@ -24,7 +24,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 	}
 
 	@Bean(name = "countries")
-	public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema countriesSchema) {
+	public DefaultWsdl11Definition defaultWsdl11DefinitionForCountry(XsdSchema countriesSchema) {
 		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
 		wsdl11Definition.setPortTypeName("CountriesPort");
 		wsdl11Definition.setLocationUri("/ws");
@@ -36,5 +36,20 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 	@Bean
 	public XsdSchema countriesSchema() {
 		return new SimpleXsdSchema(new ClassPathResource("countries.xsd"));
+	}
+	
+	@Bean(name = "hr")
+	public DefaultWsdl11Definition defaultWsdl11DefinitionForHolidayRequest(XsdSchema hrSchema) {
+		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+		wsdl11Definition.setPortTypeName("HrPort");
+		wsdl11Definition.setLocationUri("/ws");
+		wsdl11Definition.setTargetNamespace("http://mycompany.com/hr/schemas");
+		wsdl11Definition.setSchema(hrSchema);
+		return wsdl11Definition;
+	}
+
+	@Bean
+	public XsdSchema hrSchema() {
+		return new SimpleXsdSchema(new ClassPathResource("hr/hr.xsd"));
 	}
 }

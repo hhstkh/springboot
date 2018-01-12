@@ -5,5 +5,5 @@
 // Generated on: 2018.01.12 at 03:04:12 PM ICT 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://spring.io/guides/gs-producing-web-service", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package io.spring.guides.gs_producing_web_service;
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://mycompany.com/hr/schemas", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+package com.mycompany.hr.schemas;
