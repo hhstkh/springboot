@@ -10,10 +10,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver;
 
-@Configuration
+/*@Configuration
 @EnableWebMvc
-@ComponentScan
-public class MvcConfiguration extends WebMvcConfigurerAdapter {
+@ComponentScan*/
+public class MvcConfiguration /*extends WebMvcConfigurerAdapter*/ {
 
 //	@Override
 //	public void configureViewResolvers(ViewResolverRegistry registry) {
@@ -40,7 +40,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
 	    return freeMarkerConfigurer; 
 	}*/
 	
-	@Bean
+	/*@Bean
 	public ErrorPageFilter errorPageFilter() {
 	    return new ErrorPageFilter();
 	}
@@ -51,6 +51,6 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
 	    filterRegistrationBean.setFilter(filter);
 	    filterRegistrationBean.setEnabled(false);
 	    return filterRegistrationBean;
-	}
+	}*/
 
 }
