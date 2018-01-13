@@ -1,58 +1,4 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>Unique</title>
-<link rel="icon" href="favicon.png" type="image/png">
-<link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet" type="text/css">
-<link href="<c:url value="/resources/css/style.css"/>" rel="stylesheet" type="text/css"> 
-<link href="<c:url value="/resources/css/font-awesome.css"/>" rel="stylesheet" type="text/css"> 
-<link href="<c:url value="/resources/css/animate.css"/>" rel="stylesheet" type="text/css">
- 
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
-<style>
-      #map {
-        width: 100%;
-        height: 400px;
-        background-color: grey;
-      }
-    </style>
- 
-</head>
-<body>
-
-<!--Header_section-->
-<header id="header_wrapper">
-  <div class="container">
-    <div class="header_box">
-      <div class="logo"><a href="#"><img src="<c:url value="/resources/img/logo.png"/>" alt="logo"></a></div>
-	  <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        </div>
-	    <div id="main-nav" class="collapse navbar-collapse navStyle">
-			<ul class="nav navbar-nav" id="mainNav">
-			  <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
-			  <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-			  <li><a href="#service" class="scroll-link">Services</a></li>
-			  <li><a href="#Portfolio" class="scroll-link">Portfolio</a></li>
-			  <li><a href="#clients" class="scroll-link">Clients</a></li>
-			  <li><a href="#team" class="scroll-link">Team</a></li>
-			  <li><a href="#contact" class="scroll-link">Contact</a></li>
-			</ul>
-      </div>
-	 </nav>
-    </div>
-  </div>
-</header>
-<!--Header_section--> 
-
 <!--Hero_Section-->
 <section id="hero_section" class="top_cont_outer">
   <div class="hero_wrapper">
@@ -383,76 +329,6 @@
   </div>
 </section>
 <!--/Team-->
-<!--Footer-->
-<footer class="footer_wrapper" id="contact">
-  <div class="container">
-    <section class="page_section contact" id="contact">
-      <div class="contact_section">
-        <h2>Contact Us</h2>
-        <div id="map"></div>
-        <div class="row">
-          <div class="col-lg-4">
-            
-          </div>
-          <div class="col-lg-4">
-           
-          </div>
-          <div class="col-lg-4">
-          
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 wow fadeInLeft">	
-		 <div class="contact_info">
-                            <div class="detail">
-                                <h4>UNIQUE Infoway</h4>
-                                <p>104, Some street, NewYork, USA</p>
-                            </div>
-                            <div class="detail">
-                                <h4>call us</h4>
-                                <p>+1 234 567890</p>
-                            </div>
-                            <div class="detail">
-                                <h4>Email us</h4>
-                                <p>support@sitename.com</p>
-                            </div> 
-                        </div>
-       		  
-			  
-          
-          <ul class="social_links">
-            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-            <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li> 
-          </ul>
-        </div>
-        <div class="col-lg-8 wow fadeInLeft delay-06s">
-          <div class="form">
-            <input class="input-text" type="text" name="" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <input class="input-text" type="text" name="" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-            <input class="input-btn" type="submit" value="send message">
-          </div>
-        </div>
-      </div>
-    </section>
-    
-  </div>
-  <div class="container">
-    <div class="footer_bottom"><span>Copyright © 2014,    Template by <a href="http://webthemez.com">WebThemez.com</a>. </span> </div>
-  </div>
-</footer>
-<script type="text/javascript" src="<c:url value="/resources/js/jquery-1.11.0.min.js"/>" ></script>
-<script type="text/javascript" src="<c:url value="/resources/js/bootstrap.min.js"/>" ></script>
-<script type="text/javascript" src="<c:url value="/resources/js/jquery-scrolltofixed.js"/>" ></script>
-<script type="text/javascript" src="<c:url value="/resources/js/jquery.nav.js"/>" ></script> 
-<script type="text/javascript" src="<c:url value="/resources/js/jquery.easing.1.3.js"/>" ></script>
-<script type="text/javascript" src="<c:url value="/resources/js/jquery.isotope.js"/>" ></script>
-<script type="text/javascript" src="<c:url value="/resources/js/wow.js"/>" ></script> 
-<script type="text/javascript" src="<c:url value="/resources/js/custom.js"/>" ></script>
-
 <script>
 function initMap() {
 	if (navigator.geolocation) {
@@ -472,5 +348,3 @@ function initMap() {
 }
 </script>
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3fH8JjCgjRndN4q8guleyj05LBsqomoc&callback=initMap"></script>
-</body>
-</html>
