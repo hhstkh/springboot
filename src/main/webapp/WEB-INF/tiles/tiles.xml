@@ -15,5 +15,9 @@
 		<put-attribute name="title" value="Welcome"/>
 		<put-attribute name="body" value="/WEB-INF/view/welcome.jsp" />
 	</definition>
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="title" value="Login"/>
+		<put-attribute name="body" value="/WEB-INF/view/login.jsp" />
+	</definition>
 
 </tiles-definitions>

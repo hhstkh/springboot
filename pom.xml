@@ -93,10 +93,10 @@
 			<artifactId>jdom2</artifactId>
 		</dependency>
 		<!-- Spring Security -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency> -->
+		</dependency>
 		<!-- Tiles -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
