@@ -1,9 +1,6 @@
 package com.example.springboot.controller;
 
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +12,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 import com.example.springboot.entity.Category;
 import com.example.springboot.service.CategoryService;
@@ -54,6 +50,13 @@ public class CategoryController {
 		
 		categoryService.saveOrUpdate(category);
 		
+		return "redirect:/admin/category-list";
+	}
+	
+	@RequestMapping(value = "/admin/delete-category/{categoryId}", method = RequestMethod.GET)
+	public String deleteCategory(@PathVariable int categoryId,  ModelMap model) {
+		Category category = categoryService.find(categoryId);
+		categoryService.delete(category);
 		return "redirect:/admin/category-list";
 	}
 

@@ -19,6 +19,10 @@
 					<td>${category.name}</td>
 					<td>${category.description}</td>
 					<td>${category.description}</td>
+					<td>
+						<a class="btn btn-info" href="<c:url value="/admin/category-form/${category.id}"/>" role="button">Edit</a>
+						<a class="btn btn-danger" href="<c:url value="/admin/delete-category/${category.id}"/>" role="button">Delete</a>
+					</td>
 				</tr>
 			</c:forEach>
 			
