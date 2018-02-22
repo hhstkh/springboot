@@ -16,8 +16,10 @@ public class Category {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "category_name")
+	@Column(name = "name")
 	private String name;
+	
+	private String description;
 	
 
 	public int getId() {
@@ -35,6 +37,12 @@ public class Category {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
 }
